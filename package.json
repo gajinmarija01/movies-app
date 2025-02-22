@@ -2,7 +2,7 @@
   "name": "movie-app",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://github.com/gajinmarija01/movies-app.git",
+  "homepage": " https://gajinmarija01.github.io/movies-app",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
