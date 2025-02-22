@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+import HomePage from './pages/HomePage';
+import { Box } from '@mui/material';
+
+const boxSx = {
+  padding: '6.25rem',
+  display: 'grid',
+  gap: '1.25rem',
+  placeItems: 'center',
+
+};
+// Create a client instance for React Query
+const queryClient = new QueryClient();
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <Box sx={boxSx}>
+        <HomePage />
+      </Box>
+      <ToastContainer />
+    </QueryClientProvider>
   );
-}
+};
 
 export default App;
