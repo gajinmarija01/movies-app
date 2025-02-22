@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/gajinmarija01/movies-app.git/static/css/main.895d7998.css",
-    "main.js": "/gajinmarija01/movies-app.git/static/js/main.d3e171d9.js",
-    "static/js/453.1f6fefc9.chunk.js": "/gajinmarija01/movies-app.git/static/js/453.1f6fefc9.chunk.js",
-    "index.html": "/gajinmarija01/movies-app.git/index.html",
-    "main.895d7998.css.map": "/gajinmarija01/movies-app.git/static/css/main.895d7998.css.map",
-    "main.d3e171d9.js.map": "/gajinmarija01/movies-app.git/static/js/main.d3e171d9.js.map",
-    "453.1f6fefc9.chunk.js.map": "/gajinmarija01/movies-app.git/static/js/453.1f6fefc9.chunk.js.map"
+    "main.css": "/movies-app/static/css/main.895d7998.css",
+    "main.js": "/movies-app/static/js/main.8e124dfd.js",
+    "static/js/453.1f6fefc9.chunk.js": "/movies-app/static/js/453.1f6fefc9.chunk.js",
+    "index.html": "/movies-app/index.html",
+    "main.895d7998.css.map": "/movies-app/static/css/main.895d7998.css.map",
+    "main.8e124dfd.js.map": "/movies-app/static/js/main.8e124dfd.js.map",
+    "453.1f6fefc9.chunk.js.map": "/movies-app/static/js/453.1f6fefc9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.895d7998.css",
-    "static/js/main.d3e171d9.js"
+    "static/js/main.8e124dfd.js"
   ]
 }
