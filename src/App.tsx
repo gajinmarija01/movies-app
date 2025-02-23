@@ -7,7 +7,7 @@ import HomePage from './pages/HomePage';
 import { Box } from '@mui/material';
 
 const boxSx = {
-  padding: '6.25rem',
+  padding: '0 6.25rem',
   display: 'grid',
   gap: '1.25rem',
   placeItems: 'center',

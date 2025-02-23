@@ -20,14 +20,14 @@ const HomePage = () => {
     const [limit] = useState(10);
     const [query, setQuery] = useState('');
 
-    const { data, isLoading, isError, error } = useMovies(page, limit, query);
+    const { data, isLoading, isError, error, refetch } = useMovies(page, limit, query);
 
     const debouncedSearch = useCallback(
         debounce((value: string) => {
             setQuery(value);
             setPage(1);
-        }, 500),
-        []
+        }, 1000),
+        [setQuery, setPage]
     );
 
     const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -36,7 +36,14 @@ const HomePage = () => {
     };
 
     if (isLoading) return <CircularProgress />;
-    if (isError) return <Alert severity="error">{(error as Error).message}</Alert>;
+    if (isError) {
+        return (
+            <>
+                <Alert severity="error">{(error as Error).message}</Alert>
+                <button onClick={() => refetch()}>Retry</button>
+            </>
+        );
+    }
 
     return (
         <Box sx={boxSx}>
