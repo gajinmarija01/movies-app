@@ -13,7 +13,7 @@ const boxSx = {
   placeItems: 'center',
 
 };
-// Create a client instance for React Query
+
 const queryClient = new QueryClient();
 
 const App = () => {

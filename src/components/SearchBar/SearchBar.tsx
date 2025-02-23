@@ -1,5 +1,3 @@
-// src/components/SearchBar.tsx
-
 import { TextField } from '@mui/material';
 import { styled } from '@mui/system';
 
